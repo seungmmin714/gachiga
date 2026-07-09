@@ -30,7 +30,10 @@ def upgrade() -> None:
         sa.Column("rating_avg", sa.Float(), nullable=False, server_default="0"),
         sa.Column("rating_count", sa.Integer(), nullable=False, server_default="0"),
         sa.Column(
-            "created_at", sa.DateTime(timezone=True), nullable=False, server_default=sa.text("now()")
+            "created_at",
+            sa.DateTime(timezone=True),
+            nullable=False,
+            server_default=sa.text("now()"),
         ),
     )
     op.create_index("ix_users_email", "users", ["email"], unique=True)
@@ -60,7 +63,10 @@ def upgrade() -> None:
         sa.Column("seats", sa.Integer(), nullable=False, server_default="1"),
         sa.Column("status", sa.String(20), nullable=False, server_default="waiting"),
         sa.Column(
-            "created_at", sa.DateTime(timezone=True), nullable=False, server_default=sa.text("now()")
+            "created_at",
+            sa.DateTime(timezone=True),
+            nullable=False,
+            server_default=sa.text("now()"),
         ),
     )
     op.create_index("ix_ride_requests_user_id", "ride_requests", ["user_id"])
