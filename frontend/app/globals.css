@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+  background: #f5f6f8;
+  color: #1a1a2e;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.nav {
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin: 10px 0 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+button.danger {
+  background: #ef4444;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge.waiting { background: #fef3c7; color: #92400e; }
+.badge.proposed { background: #dbeafe; color: #1e40af; }
+.badge.matched, .badge.confirmed { background: #d1fae5; color: #065f46; }
+.badge.completed { background: #e5e7eb; color: #374151; }
+.badge.canceled, .badge.expired { background: #fee2e2; color: #991b1b; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 13px;
+}
