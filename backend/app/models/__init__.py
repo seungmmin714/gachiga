@@ -1,6 +1,7 @@
 from app.core.database import Base
 from app.models.match import Match, MatchMember
+from app.models.review import Review
 from app.models.ride import RideRequest
 from app.models.user import User
 
-__all__ = ["Base", "User", "RideRequest", "Match", "MatchMember"]
+__all__ = ["Base", "User", "RideRequest", "Match", "MatchMember", "Review"]
